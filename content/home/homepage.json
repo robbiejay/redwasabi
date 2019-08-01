@@ -1,0 +1,29 @@
+{
+  "title": "Home",
+  "dec1":"../images/decorations/dec1.png",
+  "content": "intro.md",
+  "gallery": [{
+    "title": "eCommerce Solutions",
+    "copy": "We provide speedy store set-up, and custom back-end engineering for larger projects",
+    "link":"/ecommerce",
+    "image": "../images/gallery/Gvector-1.png"
+  },
+  {
+    "title": "Digital Marketing",
+    "copy": "Get yourself noticed. We offer design & production packages of custom assets for use in print and digital media.",
+    "link":"/digital-marketing",
+    "image": "../images/gallery/Gvector-2.png"
+  },
+  {
+    "title": "Mobile App Development",
+    "copy": "Building online services for the web & for Android / OS",
+    "link":"/mobile-apps",
+    "image": "../images/gallery/Gvector-3.png"
+  },
+  {
+    "title": "Website Maintenance & Updates",
+    "copy": "We can take care of any issues you may have with your current site, as well as any updates you may require",
+    "link":"/maintenance",
+    "image": "../images/gallery/Gvector-4.png"
+  }]
+}

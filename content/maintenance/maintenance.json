@@ -1,0 +1,19 @@
+{
+  "title": "Maintenance",
+  "content": "info.md",
+  "bullets": [{
+      "title": "Has your technology made an uh-oh!",
+      "copy": "Don't worry.",
+      "image": "../images/maintenance-1.png"
+  },
+  {
+      "title": "Get updated, secured and backed up!",
+      "copy": "We can upcycle any previous website you may have from 1998 into a modern web app",
+      "image": "../images/maintenance-2.png"
+  },
+  {
+      "title": "Deliver lead generation strategies and optimise traffic flow",
+      "copy": "The web has changed a lot. We can help you take advantage of new developments to maximise business potential",
+      "image": "../images/maintenance-3.png"
+  }]
+}

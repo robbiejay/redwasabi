@@ -1,0 +1,19 @@
+{
+  "title": "MobileApps",
+  "content": "info.md",
+  "bullets": [{
+      "title": "Got an idea for an app?",
+      "copy": "Reach out to a captive audience with a dedicated phone engineering team",
+      "image": "../images/apps-1.png"
+  },
+  {
+      "title": "Keep all your data in one place!",
+      "copy": "Integrate your website and your app and keep that data flowing!",
+      "image": "../images/apps-2.png"
+  },
+  {
+      "title": "Reach billions of people on the App store and Play store!",
+      "copy": "Develop new and rich experiences",
+      "image": "../images/apps-3.png"
+  }]
+}

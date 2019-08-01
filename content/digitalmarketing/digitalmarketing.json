@@ -1,0 +1,19 @@
+{
+  "title": "DigitalMarketing",
+  "content": "info.md",
+  "bullets": [{
+      "title": "Get your online store up and running!",
+      "copy": "From conception to deployment, we're with you all the way. Woocommerce, Magento, Shopify or anything in between.",
+      "image": "../images/ecommerce-1.png"
+  },
+  {
+      "title": "Receive training and information about managing your store",
+      "copy": "We're known for our rapid response times and good communication. We're always empathetic to our customers needs.",
+      "image": "../images/ecommerce-2.png"
+  },
+  {
+      "title": "We're experts at payment API implementation!",
+      "copy": "Whether you're using a major payment system like Stripe or Paypal, or an alternative payment API, we can get you securely set-up.",
+      "image": "../images/ecommerce-3.png"
+  }]
+}
