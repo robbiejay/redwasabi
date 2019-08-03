@@ -9,6 +9,7 @@ import IOExample from 'components/io-example';
 import Modal from 'containers/modal';
 import { Link } from 'gatsby';
 import { graphql } from 'gatsby';
+import ModalForm from 'components/form';
 
 const Index = ({ data }) => (
   <Layout>
@@ -16,25 +17,7 @@ const Index = ({ data }) => (
     <h2 className='landing-page-header'>{data.homeJson.content.childMarkdownRemark.rawMarkdownBody}</h2>
       <Modal>
       <h3 className='modal-header'>Please fill out our enquiry form below</h3>
-      <form>
-      <div className='form-group'>
-      <label htmlFor="fullname">FULL NAME</label>
-      <input type="text" name="fullname" id="fullname"/>
-      </div>
-      <div className='form-group'>
-      <label htmlFor="email">EMAIL</label>
-      <input type="text" name="email" id="email"/>
-      </div>
-      <div className='form-group'>
-      <label htmlFor="email">A SHORT DESCRIPTION OF YOUR REQUIREMENTS...</label>
-      <textarea rows='5' name="description" id="description"/>
-      </div>
-      <div className='form-group'>
-      <label htmlFor="budget">BUDGET</label>
-      <input type="range" name="budget" id="budget"/>
-      </div>
-      <input type="submit" name="submit" id="submit"/>
-      </form>
+      <ModalForm/>
       </Modal>
       <div className='dec1-container'>
       <Img fluid={data.homeJson.dec1.childImageSharp.fluid}/>

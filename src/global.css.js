@@ -126,7 +126,7 @@ z-index: 0;
   .landing-page-header {
     margin-top: 16.666vh;
     font-size: 1.777em;
-    z-index: 1;
+    z-index: 0;
     position: relative;
   }
 
