@@ -41,26 +41,29 @@ class Form extends Component {
 
   render() {
     return (
+      <>
+      <h3 className='modal-header'>Please fill out our enquiry form below</h3>
       <form onSubmit={this.handleForm}>
-      <div className='form-group'>
-      <label htmlFor="fullname">FULL NAME</label>
-      <input type="text" name="fullname" id="fullname" onChange={this.handleInput} />
-      </div>
-      <div className='form-group'>
-      <label htmlFor="email">EMAIL</label>
-      <input type="text" name="email" id="email" onChange={this.handleInput} />
-      </div>
-      <div className='form-group'>
-      <label htmlFor="email">A SHORT DESCRIPTION OF YOUR REQUIREMENTS...</label>
-      <textarea rows='5' name="description" id="description" onChange={this.handleInput} />
-      </div>
-      <div className='form-group'>
-      <label htmlFor="email">BUDGET</label>
-      <input type="text" name="budget" id="budget" onChange={this.handleInput}/>
-      </div>
-      <input type="hidden" name="_gotcha" />
-      <input type="submit" name="submit" />
+        <div className='form-group'>
+        <label htmlFor="fullname">FULL NAME</label>
+        <input type="text" name="fullname" id="fullname" onChange={this.handleInput} />
+        </div>
+        <div className='form-group'>
+        <label htmlFor="email">EMAIL</label>
+        <input type="text" name="email" id="email" onChange={this.handleInput} />
+        </div>
+        <div className='form-group'>
+        <label htmlFor="email">A SHORT DESCRIPTION OF YOUR REQUIREMENTS...</label>
+        <textarea rows='5' name="description" id="description" onChange={this.handleInput} />
+        </div>
+        <div className='form-group'>
+        <label htmlFor="email">BUDGET</label>
+        <input type="text" name="budget" id="budget" onChange={this.handleInput}/>
+        </div>
+        <input type="hidden" name="_gotcha" />
+        <input type="submit" name="submit" />
       </form>
+      </>
     )
   }
 }

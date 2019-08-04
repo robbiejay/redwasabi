@@ -5,7 +5,9 @@ export const Container = styled.nav`
     display: flex;
     list-style: none;
     padding: 0;
-
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
     li {
       text-transform: uppercase;
       font-size: 1.3rem;
