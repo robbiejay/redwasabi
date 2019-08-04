@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -94,7 +93,7 @@ export const WobblyBox = ({
       setNextContentIndex()
     }
     
-    const { title, text } = getContent()
+    const { title } = getContent()
     return (
       <div
         className="wobbly-box landing-page-header"
@@ -109,12 +108,6 @@ export const WobblyBox = ({
           >
             {title}
           </h1>
-          <p
-            className="wobbly-box__text"
-            ref={textElement}
-          >
-            {text}
-          </p>
         </div>
         <div
           className="wobbly-box__bottom"

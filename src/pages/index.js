@@ -18,15 +18,12 @@ class Index extends React.PureComponent{
     const { data, showModal } = this.props
 
     const content = [
-      { title: '',    text: data.homeJson.content.childMarkdownRemark.rawMarkdownBody },
-      { title: 'Thanks for looking',  text: 'and have a nice day :)'       },
-      { title: 'Made with React',     text: 'and JS, CSS, GreenSock'       }
+      { title: data.homeJson.content.childMarkdownRemark.rawMarkdownBody }
     ]
     
     return (  
       <Layout>
         <Box>
-          {/* <h2 className='landing-page-header'>{data.homeJson.content.childMarkdownRemark.rawMarkdownBody}</h2> */}
             <div className='dec1-container'>
             <Img fluid={data.homeJson.dec1.childImageSharp.fluid}/>
             </div>
@@ -35,8 +32,6 @@ class Index extends React.PureComponent{
             <ModalForm/>
             </Modal>
         </Box>
-        
-        
         
         <div style={{ height: '16.666vh' }} />
         
