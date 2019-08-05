@@ -8,8 +8,12 @@ export const Container = styled.div`
   h2 {
       font-family: 'Major Mono Display', monospace;
   }
+
+  @media (min-width: 1024px){
   width: 100vw;
   height: 50vh;
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;

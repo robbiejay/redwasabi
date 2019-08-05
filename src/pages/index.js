@@ -24,16 +24,16 @@ class Index extends React.PureComponent{
     return (  
       <Layout>
         <Box>
-            <div className='dec1-container'>
+            {/* <div className='dec1-container'>
             <Img fluid={data.homeJson.dec1.childImageSharp.fluid}/>
-            </div>
+            </div> */}
             <WobblyBox content={content} />
             <Modal showModal={showModal}>
             <ModalForm/>
             </Modal>
         </Box>
         
-        <div style={{ height: '16.666vh' }} />
+        <div style={{ height: '50vh' }} />
         
         <Gallery items={data.homeJson.gallery} />
         

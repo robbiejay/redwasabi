@@ -15,7 +15,7 @@ export const Title = styled.span`
 `;
 
 export const Copy = styled.p`
-  color: #757575;
+  color: #fff;
   margin: 0 2rem 2rem;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;

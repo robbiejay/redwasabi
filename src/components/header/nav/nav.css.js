@@ -14,9 +14,12 @@ export const Container = styled.nav`
       font-size: 1.3rem;
       font-family: 'IBM Plex Mono', monospace;
       font-size: 15px;
-      & + li {
-        margin-left: 2rem;
+      @media (min-width: 768px) {
+        & + li {
+          margin-left: 2rem;
+        }
       }
+      
     }
   }
 `;
