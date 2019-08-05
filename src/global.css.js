@@ -37,7 +37,7 @@ export default createGlobalStyle`
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1;
     font-size: 1.6rem;
-    color: #000;
+    color: #fff;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -105,27 +105,30 @@ export default createGlobalStyle`
   }
 
   .dec1-container {
-    width: 512px;
-    height: 512px;
+    width: 100%;
+    height: auto;
     position: absolute;
-    right: -150px;
     top: 50px;
     opacity: .5;
     transition: 1s ease-in-out;
     z-index: -1;
     cursor: crosshair;
-  }
-
-  @media (max-width: 1080px) {
-    .dec1-container {
-      opacity: 0.5;
-      z-index: 0;
+    @media (min-width: 1024px) {
+      width: 512px;
+      height: 512px;
+      right: -150px; 
+    }
+    @media (max-width: 1080px) {
+        opacity: 0.5;
+        z-index: 0;
     }
   }
 
   .landing-page-header {
+    @media (min-width:1024px){
     margin-top: 16.666vh;
     font-size: 1.777em;
+    }
     position: relative;
   }
 
@@ -378,4 +381,47 @@ input[type=range]:focus::-ms-fill-upper {
     border-radius: 10px;
     font-family: "Major Mono Display", monospace;
 }
+
+.wobbly-box__title {
+    color: #fff;
+}
+
+body{
+    background: -webkit-linear-gradient(150deg,#1abc9c,#2ecc71,#3498db,#1abc9c,#d35400,#2c3e50);
+    background: -o-linear-gradient(150deg,#1abc9c,#2ecc71,#3498db,#1abc9c,#d35400,#2c3e50);
+    background: -moz-linear-gradient(150deg,#1abc9c,#2ecc71,#3498db,#1abc9c,#d35400,#2c3e50);
+    background: linear-gradient(150deg,#1abc9c,#2ecc71,#3498db,#1abc9c,#d35400,#2c3e50);
+    background-size: 400% 400%;
+    -webkit-animation: raed 15s infinite ease-in-out;
+    -o-animation: raed 15s infinite ease-in-out;
+    -moz-animation: raed 15s infinite ease-in-out;
+   animation: raed 15s infinite ease-in-out;
+        
+}
+
+
+@-webkit-keyframes raed{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+
+@-o-keyframes raed{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+
+@-moz-keyframes raed{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+    
+}@keyframes raed{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+
+
 `;
