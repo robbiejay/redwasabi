@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { accent } from 'constants/theme';
+
 export default createGlobalStyle`
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -107,26 +108,24 @@ export default createGlobalStyle`
     width: 512px;
     height: 512px;
     position: absolute;
-    right: 0px;
-    top: 84px;
-    opacity: 1;
+    right: -150px;
+    top: 50px;
+    opacity: .5;
     transition: 1s ease-in-out;
+    z-index: -1;
     cursor: crosshair;
   }
 
-@media (max-width: 1080px) {
-  .dec1-container {
-opacity: 0.5;
-z-index: 0;
+  @media (max-width: 1080px) {
+    .dec1-container {
+      opacity: 0.5;
+      z-index: 0;
+    }
   }
-}
-
-
 
   .landing-page-header {
     margin-top: 16.666vh;
     font-size: 1.777em;
-    z-index: 0;
     position: relative;
   }
 
@@ -369,5 +368,14 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: none;
+}
+
+.wobbly-box {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    font-family: "Major Mono Display", monospace;
 }
 `;

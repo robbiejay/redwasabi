@@ -6,13 +6,20 @@ import Box from 'components/box';
 import Bullets from 'components/bullets';
 import { graphql } from 'gatsby';
 import Title from 'components/title';
+import posed from 'react-pose'
 
-
-
-
+const Pop = posed.div({
+  enter: {
+    staggerChildren: 100,
+    transition: { duration: 300 },
+    delay: 300
+  }
+})
 
 const Ecommerce = ({ data }) => (
   <Layout>
+  <Pop>
+
   <Box>
   <div className='header-text-container'>
   <Title as="h2" size="large">
@@ -24,6 +31,7 @@ const Ecommerce = ({ data }) => (
     <Img fluid={data.imageEcommerce.childImageSharp.fluid} alt="" />
     </div>
   </Box>
+  </Pop>
   <Bullets items={data.ecommerceJson.bullets} />
   </Layout>
 );
