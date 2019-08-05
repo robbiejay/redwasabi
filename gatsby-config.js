@@ -8,6 +8,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `IBM Plex Mono`
+        ],
+        display: 'swap'
+      }
+    },
     `gatsby-transformer-json`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-eslint`,
