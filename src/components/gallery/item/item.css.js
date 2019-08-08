@@ -11,6 +11,7 @@ export const Title = styled.span`
 
 export const Copy = styled.p`
   color: #fff;
+  line-height: 25px;
   margin: 0 2rem 2rem;
   font-weight: 300;
 
