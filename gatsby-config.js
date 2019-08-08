@@ -1,6 +1,7 @@
 const siteConfig = require('./site-config');
 
 module.exports = {
+  pathPrefix: "/redwasabi",
   siteMetadata: {
     ...siteConfig,
   },

@@ -10,7 +10,8 @@
     "build:dir": "mkdirp ./public/icons/",
     "build:favicons": "node scripts/favicons",
     "build": "npm run build:dir && npm run build:favicons && gatsby build",
-    "test": "ava **/*.test.js --verbose"
+    "test": "ava **/*.test.js --verbose",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "greenkeeper": {
     "ignore": [
@@ -63,6 +64,7 @@
     "eslint-plugin-react": "^7.12.4",
     "favicons": "^5.3.0",
     "gatsby-plugin-eslint": "^2.0.3",
+    "gh-pages": "^2.1.0",
     "lighthouse": "^4.0.0",
     "mkdirp": "^0.5.1",
     "node-gyp": "^3.8.0",
