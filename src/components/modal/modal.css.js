@@ -5,9 +5,8 @@ export const Button = styled.button`
   background-color: transparent;
   border-radius: 3px;
   border: none;
-  color:#00ff8a;
+  color:#cae4ff;
   border: 2px solid #00ff8a;
-
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;

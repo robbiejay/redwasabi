@@ -98,6 +98,24 @@ export default createGlobalStyle`
     width: 25%;
   }
 
+  .col-4 {
+    float: left;
+    display: inline-block;
+    width: 33.3333%;
+  }
+
+  .col-6 {
+    float: left;
+    display: inline-block;
+    width: 50%;
+  }
+
+  .col-8 {
+    float: left;
+    display: inline-block;
+    width: 66.6666%;
+  }
+
   .col-9 {
     float: left;
     display: inline-block;
@@ -116,13 +134,35 @@ export default createGlobalStyle`
     @media (min-width: 1024px) {
       width: 512px;
       height: 512px;
-      right: -150px; 
+      right: -150px;
     }
     @media (max-width: 1080px) {
         opacity: 0.5;
         z-index: 0;
     }
   }
+
+  .package-card {
+    background-color: #fff;
+    border-radius: 7px;
+    width: 66.666%;
+    margin-left: 16.666%;
+    display: inline-block;
+    min-height: 420px;
+    color: #000;
+  }
+
+  .package-card h1 {
+    font-size: 1.777em;
+    margin-top: 21px;
+    margin-bottom: 14px;
+  }
+
+  .package-card h2 {
+    font-size: 1.333em;
+    margin-bottom: 21px;
+  }
+
 
   .landing-page-header {
     @media (min-width:1024px){
@@ -396,7 +436,7 @@ body{
     -o-animation: raed 15s infinite ease-in-out;
     -moz-animation: raed 15s infinite ease-in-out;
    animation: raed 15s infinite ease-in-out;
-        
+
 }
 
 
@@ -416,7 +456,7 @@ body{
     0%{background-position: 0% 50%}
     50%{background-position: 100% 50%}
     100%{background-position: 0% 50%}
-    
+
 }@keyframes raed{
     0%{background-position: 0% 50%}
     50%{background-position: 100% 50%}

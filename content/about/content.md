@@ -1,21 +1,17 @@
-Find the repository [on GitHub](https://github.com/fabe/gatsby-universal).
-
 ```
-# Installation
-gatsby new my-site https://github.com/fabe/gatsby-universal
+# RedWasabi
+Robbie & Scott are full-stack developers
+with over 10 years of combined experience
+building software for the web.
 
-# To develop
-yarn develop
+# Our Approach
 
-# To build
-yarn build
+We are always seeking out faster
+workflows. Faster workflows = bigger
+and better projects for our clients.
 
-# To test SSR (for Lighthouse etc.)
-yarn ssr
-
-# To format JS (precommit)
-yarn format
-
-# To generate favicons (included in `build`)
-yarn build:favicons
+Our efficient development
+lifecycles help our clients build
+ambitious and powerful projects on an
+affordable budget.
 ```

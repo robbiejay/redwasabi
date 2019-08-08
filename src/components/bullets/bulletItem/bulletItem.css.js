@@ -7,11 +7,11 @@ export const Title = styled.span`
   font-weight: 500;
   margin: 2rem 2rem 1rem;
   font-size: 2rem;
-  margin-top:7px;
+  margin-top:14px;
   margin-left: 14px;
   font-family: 'Catamaran', sans-serif;
   line-height: 1.1em;
-    color: #252525;
+    color: #fff;
 `;
 
 export const Copy = styled.p`
@@ -25,10 +25,3 @@ export const Copy = styled.p`
     margin-bottom: 4rem;
   `};
 `;
-
-  export const Img = styled.img`
-  width: 64px;
-  height: 64px;
-  display: inline-block;
-  float: left;
-  `;

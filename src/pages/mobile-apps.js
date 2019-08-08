@@ -5,6 +5,7 @@ import Title from 'components/title';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Bullets from 'components/bullets';
+import CopySection from 'components/CopySection';
 import Head from 'components/head';
 import Img from 'gatsby-image';
 
@@ -21,12 +22,14 @@ const MobileApps = ({ data }) => (
     </div>
   </Box>
   <Bullets items={data.mobileappsJson.bullets} />
+
   </Layout>
 );
 
 MobileApps.propTypes = {
   data: PropTypes.object.isRequired,
-  bullets: PropTypes.object.isRequired
+  bullets: PropTypes.object.isRequired,
+  copySection: PropTypes.object.isRequired,
 };
 
 export default MobileApps;
@@ -49,13 +52,24 @@ query MobileAppsQuery {
     }
   }
   mobileappsJson {
-  bullets {
-    title
-    copy
-    image {
-      childImageSharp {
-        fluid(maxHeight: 500, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp
+    bullets {
+      title
+      copy
+      image {
+        childImageSharp {
+          fluid(maxHeight:500,quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+    copySection {
+      title
+      copy
+      image {
+        childImageSharp {
+          fluid(maxHeight:500,quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

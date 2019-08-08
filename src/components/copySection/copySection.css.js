@@ -3,16 +3,12 @@ import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.div`
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4rem;
-
+  display: block;
   padding: 0 4rem;
-  padding-top: 14px;
   margin: 2rem 0;
   font-family: 'Roboto', serif;
-  margin-bottom: 70px;
-
+  border-radius: 7px;
+  letter-spacing: 1px;
 
   ${MEDIA.TABLET`
     display: block;

@@ -20,8 +20,8 @@ class Index extends React.PureComponent{
     const content = [
       { title: data.homeJson.content.childMarkdownRemark.rawMarkdownBody }
     ]
-    
-    return (  
+
+    return (
       <Layout>
         <Box>
             {/* <div className='dec1-container'>
@@ -32,11 +32,11 @@ class Index extends React.PureComponent{
             <ModalForm/>
             </Modal>
         </Box>
-        
+
         <div style={{ height: '50vh' }} />
-        
+
         <Gallery items={data.homeJson.gallery} />
-        
+
         <div style={{ height: '16.666vh' }} />
 
         <Box>
@@ -47,7 +47,7 @@ class Index extends React.PureComponent{
 
           <Link className='section-link' to="/about">Upgrade Now</Link>
         </Box>
-        
+
         <Box>
           <Title size="large">
             <h1 className='section-header'>Set up company Intranet</h1>
@@ -56,7 +56,7 @@ class Index extends React.PureComponent{
 
           <Link className='section-link' to="/about">Find Out More</Link>
         </Box>
-        
+
         <Box>
           <Title size="large">
             <h1 className='section-header'>Need a Wordpress developer?</h1>
@@ -65,11 +65,11 @@ class Index extends React.PureComponent{
 
           <Link className='section-link' to="/about">Find Out More</Link>
         </Box>
-        
+
         <div style={{ height: '16.666vh' }} />
-        
+
         <IOExample />
-      
+
       </Layout>
     )
   }

@@ -15,5 +15,10 @@
       "title": "Reach billions of people on the App store and Play store!",
       "copy": "Develop new and rich experiences",
       "image": "../images/apps-3.png"
-  }]
+  }],
+  "copySection": [{
+    "title": "Mobile App Design and Development",
+    "copy": "We build perfect mobile applications for any consumer market. Our application development team has expertise in OS & Android devleopment. We also do WeChat, Facebook and many other 'in-app' applications",
+    "image":"../images/mobile-app-abstract-1.png"
+    }]
 }

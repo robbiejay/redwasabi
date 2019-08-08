@@ -6,7 +6,9 @@ import { Title, Copy } from './item.css';
 
 const Item = ({ title, copy, image, link }) => (
   <figure>
+  <div style={{width:'66.666%',marginLeft: '16.6666%'}}>
     <Img fluid={image ? image.childImageSharp.fluid : {}} alt={title} />
+    </div>
     <figcaption>
       <Title>{title}</Title>
       <Copy>{copy}</Copy>

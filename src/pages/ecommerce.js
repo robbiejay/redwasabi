@@ -33,6 +33,24 @@ const Ecommerce = ({ data }) => (
   </Box>
   </Pop>
   <Bullets items={data.ecommerceJson.bullets} />
+  <div className='package-container'>
+    <div className='col-6'>
+    <div className='package-card'>
+    <div className='col-3'>
+    <Img fluid={data.ecommerceJson.imageTwo.childImageSharp.fluid} alt="" />
+    </div>
+    <div className='col-9'>
+    <h1>Package Maki</h1>
+    <h2>eCommerce Starter</h2>
+    <p>Thing</p>
+    <p>Thing</p>
+    <p>Thing</p>
+    <p>Thing</p>
+    <p>Thing</p>
+    </div>
+    </div>
+    </div>
+  </div>
   </Layout>
 );
 
@@ -40,7 +58,8 @@ Ecommerce.propTypes = {
   data: PropTypes.object.isRequired,
   bullets: PropTypes.object.isRequired,
   imageOne: PropTypes.object.isRequired,
-  imageTwo: PropTypes.object.isRequired
+  imageTwo: PropTypes.object.isRequired,
+  imageMaki: PropTypes.object.isRequired
 };
 
 export default Ecommerce;
@@ -48,6 +67,21 @@ export default Ecommerce;
 export const query = graphql`
 query EcommerceQuery {
   imageEcommerce: file(relativePath: {eq: "images/ecommerce.png"}) {
+  childImageSharp {
+    fluid(maxHeight: 220, quality: 90) {
+      base64
+      aspectRatio
+      src
+      srcSet
+      srcWebp
+      srcSetWebp
+      sizes
+      originalImg
+      originalName
+      }
+    }
+  }
+  imageMaki: file(relativePath: {eq: "images/maki.png"}) {
   childImageSharp {
     fluid(maxHeight: 220, quality: 90) {
       base64
@@ -80,7 +114,7 @@ query EcommerceQuery {
     }
     imageTwo {
       childImageSharp {
-        fluid(maxHeight: 64, quality: 100) {
+        fluid(maxHeight: 98, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
           base64
           aspectRatio
