@@ -76,11 +76,10 @@ export default createGlobalStyle`
     padding: 2rem;
     margin-top: 4rem;
     overflow: auto;
-    font-size: 85%;
+    font-size: 100%;
     line-height: 1.45;
     border-radius: 5px;
     color: ${accent};
-    border: 1px solid #ddd;
     font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
   }
 
@@ -145,8 +144,9 @@ export default createGlobalStyle`
   .package-card {
     background-color: #fff;
     border-radius: 7px;
-    width: 66.666%;
-    margin-left: 16.666%;
+    width: 50%;
+    margin: 20px;
+    /* margin-left: 16.666%; */
     display: inline-block;
     min-height: 420px;
     color: #000;
@@ -165,6 +165,7 @@ export default createGlobalStyle`
 
 
   .landing-page-header {
+    font-family: "Major Mono Display", monospace;
     @media (min-width:1024px){
     margin-top: 16.666vh;
     font-size: 1.777em;
@@ -174,13 +175,21 @@ export default createGlobalStyle`
 
   .section-header {
     font-family: 'Major Mono Display', monospace;
+    text-align: center;
   }
 
   .section-caption {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #333;
+    color: #fff;
+    padding: 20px;
     margin-top: 7px;
+  }
+
+  .full-width {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
   }
 
   .section-link {
@@ -207,7 +216,7 @@ export default createGlobalStyle`
   .header-text-container {
     display: inline-block;
     width: 66.666%;
-    float; left;
+    text-align: center;
   }
 
   .header-img-container {
@@ -413,13 +422,12 @@ input[type=range]:focus::-ms-fill-upper {
   background: none;
 }
 
-.wobbly-box {
+pre, .wobbly-box {
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 30px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    font-family: "Major Mono Display", monospace;
 }
 
 .wobbly-box__title {

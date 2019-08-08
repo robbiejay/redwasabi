@@ -33,24 +33,38 @@ const Ecommerce = ({ data }) => (
   </Box>
   </Pop>
   <Bullets items={data.ecommerceJson.bullets} />
-  <div className='package-container'>
-    <div className='col-6'>
-    <div className='package-card'>
-    <div className='col-3'>
-    <Img fluid={data.ecommerceJson.imageTwo.childImageSharp.fluid} alt="" />
+  {/* <div className='package-container'>
+    <div className='full-width'>
+      <div className='package-card'>
+        <div className='col-3'>
+        <Img fluid={data.ecommerceJson.imageTwo.childImageSharp.fluid} alt="" />
+        </div>
+        <div className='col-9'>
+        <h1>Package Maki</h1>
+        <h2>eCommerce Starter</h2>
+        <p>Thing</p>
+        <p>Thing</p>
+        <p>Thing</p>
+        <p>Thing</p>
+        <p>Thing</p>
+        </div>
+      </div>
+      <div className='package-card'>
+        <div className='col-3'>
+        <Img fluid={data.ecommerceJson.imageTwo.childImageSharp.fluid} alt="" />
+        </div>
+        <div className='col-9'>
+        <h1>Package Maki</h1>
+        <h2>eCommerce Starter</h2>
+        <p>Thing</p>
+        <p>Thing</p>
+        <p>Thing</p>
+        <p>Thing</p>
+        <p>Thing</p>
+        </div>
+      </div>
     </div>
-    <div className='col-9'>
-    <h1>Package Maki</h1>
-    <h2>eCommerce Starter</h2>
-    <p>Thing</p>
-    <p>Thing</p>
-    <p>Thing</p>
-    <p>Thing</p>
-    <p>Thing</p>
-    </div>
-    </div>
-    </div>
-  </div>
+  </div> */}
   </Layout>
 );
 
