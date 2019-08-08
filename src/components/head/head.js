@@ -148,11 +148,6 @@ const Head = ({
       sizes="16x16"
       type="image/png"
     />
-    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Roboto:300&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css?family=Catamaran:900&display=swap" rel="stylesheet"/>
-
-
 
     <script type="application/ld+json">
       {JSON.stringify(
