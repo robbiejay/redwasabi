@@ -266,8 +266,9 @@ export default createGlobalStyle`
   }
 
   .modal-header {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     margin-left: 5%;
+    color: rgba(77,0,143,0.66);
   }
 
   .form-group {
@@ -280,7 +281,7 @@ export default createGlobalStyle`
     color: rgba(77,0,143,0.66);
     display: block;
     margin-top: 7px;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
     margin-left: 5%;
     font-size: 0.75em;
   }
@@ -290,26 +291,28 @@ export default createGlobalStyle`
     margin-left: 5%;
     border-radius: 7px;
     box-shadow: none;
-    border: 2px solid #00ff8a;
+    height: 30px;
+    border: none;
     line-height: 2em;
     vertical-align: middle;
     padding-left: 14px;
     margin-bottom: 14px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-size: 15px;
   }
 
   .form-group textarea {
     width: 86.4%;
     margin-left: 5%;
+    min-height: 150px;
     border-radius: 7px;
     box-shadow: none;
-    border: 2px solid #00ff8a;
+    border: none;
     line-height: 1.333em;
     padding-left: 14px;
     margin-bottom: 14px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-size: 15px;
     resize: none;
   }
 
@@ -318,11 +321,15 @@ export default createGlobalStyle`
     background-color: #00ff8a;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    font-weight 700em;
     width: 90%;
-    margin-left: 5%;
+    border-radius: 4px;
     padding: 14px;
     margin-top: 14px;
+    max-width: 150px;
+    margin: 0 auto;
+    color: black;
+    font-size: 15px;
+    justify-self: center;
   }
 
   input[type=range] {
@@ -358,6 +365,12 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -14px;
   box-shadow: inset 0px 10px 10px 0px rgba(255,255,255,0.5);
 
+}
+
+[data-reach-dialog-content] {
+    max-width: 500px !important;
+    background: rgba(255,255,255,.7) !important;
+    border-radius: 4px;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
@@ -432,6 +445,11 @@ pre, .wobbly-box {
 
 .wobbly-box__title {
     color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 body{
