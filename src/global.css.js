@@ -371,6 +371,7 @@ input[type=range]::-webkit-slider-thumb {
     max-width: 500px !important;
     background: rgba(255,255,255,.7) !important;
     border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 30px;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
