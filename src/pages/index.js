@@ -43,7 +43,7 @@ class Index extends React.PureComponent{
           <Title size="large">
             <h1 className='section-header'>Want to Upgrade from Squarespace?</h1>
           </Title>
-          <h3 className='section-caption'>Elevate your online platform from just 3000HKD</h3>
+          <h3 className='section-caption'>Elevate your online platform at an affordable price</h3>
 
           <Link className='section-link' to="/about">Upgrade Now</Link>
         </Box>
@@ -61,7 +61,7 @@ class Index extends React.PureComponent{
           <Title size="large">
             <h1 className='section-header'>Need a Wordpress developer?</h1>
           </Title>
-          <h3 className='section-caption'>Get your Wordpress site up and running, or reach out for wordpress maintenance</h3>
+          <h3 className='section-caption'>Get your Wordpress site up and running, or reach out for Wordpress maintenance</h3>
 
           <Link className='section-link' to="/about">Find Out More</Link>
         </Box>

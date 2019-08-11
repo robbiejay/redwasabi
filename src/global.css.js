@@ -372,6 +372,7 @@ input[type=range]::-webkit-slider-thumb {
     background: rgba(255,255,255,.7) !important;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 30px;
+    backdrop-filter: blur(2px);
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
