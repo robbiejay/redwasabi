@@ -372,6 +372,9 @@ input[type=range]::-webkit-slider-thumb {
     background: rgba(255,255,255,.7) !important;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 30px;
+}
+
+[data-reach-dialog-overlay] {
     backdrop-filter: blur(2px);
 }
 
