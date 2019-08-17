@@ -81,6 +81,18 @@ export default createGlobalStyle`
     border-radius: 5px;
     color: ${accent};
     font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+
+    @media (max-width: 768px){    
+      max-width: 250px;
+      padding: 0;
+      white-space: pre-wrap;
+      font-size: 17px;
+      /* top: 100px; */
+      position: relative;
+      padding: 20px;
+      height: 380px;
+      overflow: scroll;
+    }
   }
 
   video {
